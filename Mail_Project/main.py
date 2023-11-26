@@ -8,8 +8,8 @@ from flask import render_template
 def index():
 	msg = Message(
 			'Hello user welcome..',
-			sender=('Shrikant Mane', 'shrikant99.mane.com'),
-			recipients=['shrikant101.mane@gmail.com'],
+			sender=('sender_name', 'sender_mail_address'),
+			recipients=['recipients mail address'],
 
 			)
 	msg.html = render_template("Home.html")
@@ -20,8 +20,8 @@ def index():
 def reset():
 	msg = Message(
 		'Reset your password .',
-		sender=('Shrikant Mane', 'shrikant99.mane.com'),
-		recipients=['shrikant101.mane@gmail.com'],
+		sender=('sender_name', 'sender_mail_address'),
+			recipients=['recipients mail address'],
 
 	)
 	msg.html = render_template("reset.html")
