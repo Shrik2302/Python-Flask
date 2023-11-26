@@ -1,11 +1,11 @@
 import psycopg2
 
 try:
-    connection = psycopg2.connect(user='postgres',
-                                  password='root',
-                                  host='localhost',
-                                  port=5432,
-                                  database='basic')
+    connection = psycopg2.connect(user='postgres_user_name',
+                                  password='postgres_user_password',
+                                  host='hostname',
+                                  port='port_number',
+                                  database='database_name')
 
     cursor = connection.cursor()
     update_query = """UPDATE employee SET emp_name=%s where emp_id = %s """
