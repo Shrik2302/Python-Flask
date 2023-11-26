@@ -1,11 +1,11 @@
 import psycopg2
 
 try:
-    connection = psycopg2.connect(user='postgres',
-                                  password='root',
-                                  host='localhost',
-                                  port='5432',
-                                  database='basic')
+    connection = psycopg2.connect(user='postgres_user',
+                                  password='Postgres_user_pasword',
+                                  host='hostname',
+                                  port='port',
+                                  database='database_name')
 
     cursor = connection.cursor()
     delete_query = "DELETE FROM employee WHERE emp_id = 16"
