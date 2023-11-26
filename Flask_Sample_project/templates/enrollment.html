@@ -1,0 +1,11 @@
+{% extends 'base.html'%}
+{% block content %}
+<div class="row">
+  <div class="col-md-12 text-center">
+    <h1> You are enrolled in :</h1>
+    <p>course Id: {{ data.id }}</p>
+    <p>course Title: {{ data.title }}</p>
+    <p>course Term: {{ data.term }}</p>
+  </div>
+</div>
+{% endblock %}
