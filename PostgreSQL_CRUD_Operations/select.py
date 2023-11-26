@@ -1,11 +1,11 @@
 import psycopg2
 
 try:
-    connection = psycopg2.connect(user='postgres',
-                                  password='root',
-                                  host='localhost',
-                                  port='5432',
-                                  database='basic')
+    connection = psycopg2.connect(user='postgres_user_name',
+                                  password='postgres_user_password',
+                                  host='host_name',
+                                  port='port_number',
+                                  database='database_name')
 
     cursor = connection.cursor()
     cursor.execute("SELECT * from employee ORDER BY emp_id")
